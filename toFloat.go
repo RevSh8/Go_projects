@@ -1,3 +1,4 @@
+//Package that contains only one func "ToFloat"
 package toFloat
 
 import (
@@ -6,7 +7,8 @@ import (
 	"os"
 	"strconv"
 )
-
+//Function that let you to acquire a float64 num from user and
+//get it in your project. Also you can get an error.
 func ToFloat()(float64, error){
 	reader := bufio.NewReader(os.Stdin)
 	input, err := reader.ReadString('\n')
